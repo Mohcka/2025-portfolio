@@ -19,9 +19,9 @@ export const BadgeLink = ({ children, url, color = '#000000', className }: Badge
 
   if (isEmpty) {
     return (
-      <a className={linkStyles} style={style}>
+      <button className={linkStyles} style={style}>
         {children}
-      </a>
+      </button>
     );
   }
 
