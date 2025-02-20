@@ -13,7 +13,7 @@ export const ButtonLink = ({ children, url, color = '#000000', className }: Butt
   const isEmpty = !url;
   const style = { borderColor: color };
   const linkStyles = cn(
-    'inline-block px-4 rounded-full shadow-md dark:shadow-gray-700 hover:bg-current/10 transition-colors border-4 hover:bg-current/10 transition-colors',
+    'inline-block px-4 rounded-full mt-2 shadow-md dark:shadow-gray-700 hover:bg-current/10 transition-colors border-4 hover:bg-current/10 transition-colors',
     className
   );
 
