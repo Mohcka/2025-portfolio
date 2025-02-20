@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
-// import { Geist, Geist_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 // const geistSans = Geist({
@@ -8,10 +8,10 @@ import "./globals.css";
 //   subsets: ["latin"],
 // });
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Michael Walker's Portfolio",
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={jetbrainsMono.className}>
         <div className="flex justify-center">
           <div className="container mx-auto max-w-3xl p-4">
             <div className="prose dark:prose-invert md:prose-md lg:prose-lg max-w-none">{children}</div>
