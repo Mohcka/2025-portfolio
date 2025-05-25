@@ -84,12 +84,16 @@ export const technologies: Record<string, Technology>
     color: "#3178C6",
     homePageUrl: "https://www.typescriptlang.org/",
     iconUrl: "/typescript.svg"
-  },
-  TailwindCSS: {
+  },  TailwindCSS: {
     name: "Tailwind CSS",
     color: "#38B2AC",
     homePageUrl: "https://tailwindcss.com/",
     iconUrl: "/tailwind.svg"
+  },
+  ShadcnUI: {
+    name: "Shadcn/UI",
+    color: "#000000",
+    homePageUrl: "https://ui.shadcn.com/",
   },
   AI: { name: "AI", color: "#FF6F00" },
   ChatGPT: {
